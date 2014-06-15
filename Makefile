@@ -18,9 +18,9 @@ ifdef CONFIG_SNDIO
 SRCS += audio_sndio.c
 endif
 
-ifdef CONFIG_AO
-SRCS += audio_ao.c
-endif
+#ifdef CONFIG_AO
+#SRCS += audio_ao.c
+#endif
 
 ifdef CONFIG_PULSE
 SRCS += audio_pulse.c
@@ -30,9 +30,9 @@ ifdef CONFIG_ALSA
 SRCS += audio_alsa.c
 endif
 
-ifdef CONFIG_AVAHI
-SRCS += mdns_avahi.c
-endif
+#ifdef CONFIG_AVAHI
+#SRCS += mdns_avahi.c
+#endif
 
 ifdef CONFIG_HAVE_DNS_SD_H
 SRCS += mdns_dns_sd.c
